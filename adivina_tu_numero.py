@@ -8,3 +8,8 @@ def adivina_el_numero(x):
     print(" tu meta es adivinar el número generado por la computadora.")
 
     numero_aleatoreo = random.randint(1,x) # número aleatoreo entre 1 y x
+
+    predicción = 0 
+
+    while predicción != numero_aleatoreo:
+        predicción = input(f"Adivina el número entre 1 y {x}: ")
